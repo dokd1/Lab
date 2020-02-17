@@ -48,3 +48,5 @@ void Movie::setOpeningCredits(string a) {
 string Movie::getOpeningCredits() {
     return openingCredits;
 }
+
+cout << "Hello" << endl;
