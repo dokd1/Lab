@@ -1,0 +1,50 @@
+// FUNCTIONS DEFINITION
+#include "Main.h"
+#include "Inherited.h"
+#include <iostream>
+using namespace std;
+
+show::show() {
+
+}
+show::show(string TitleName, string DescriptionsDet) {
+    Title = TitleName;
+    Description = DescriptionsDet;
+}
+
+void show::SetDescription(string userDes) {
+    Description = userDes;
+}
+void show::SetTitle(string userTitle) {
+    Title = userTitle;
+}
+string show::GetDescription() {
+    return Description;
+}
+string show::GetTitle() {
+    return Title;
+}
+void show::Details() {
+    cout << "Title: " << GetTitle() << endl;
+    cout << "Description: " << GetDescription() << endl;
+    cout << "# of Episodes: " << 5 << endl;
+}
+//void Movie::Play() {
+//    cout << "Opening Credits: " << endl;
+//}
+//void TVshow::Play() {
+//    cout << "Seasons: " << epAndSeasons[20][20] << endl;
+//    cout << "Episodes: " << epAndSeasons[10][35] << endl;
+//}
+
+void TVshow::details() {
+    cout << "Title: " << GetTitle() << endl;
+    cout << "Description: " << GetDescription() << endl;
+    cout << "# of Episodes: " << 5 << endl;
+}
+void Movie::setOpeningCredits(string a) {
+    openingCredits = a;
+}
+string Movie::getOpeningCredits() {
+    return openingCredits;
+}
